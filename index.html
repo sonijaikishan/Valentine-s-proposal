@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Question for Golu 💕</title>
+  <meta name="description" content="A special Valentine's Day question for someone special">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Floating hearts background -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- Main content -->
+  <div class="container" id="mainContainer">
+    <div class="question-card">
+      <h1 class="main-question">Golu</h1>
+      <h2 class="sub-question">Will you be my Valentine?</h2>
+      <div class="hearts-decoration">
+        <span class="heart-icon">💝</span>
+        <span class="heart-icon">💕</span>
+        <span class="heart-icon">💖</span>
+      </div>
+      <div class="buttons-container">
+        <button class="btn btn-yes" id="yesBtn">
+          <span>Yes! 💕</span>
+        </button>
+        <button class="btn btn-no" id="noBtn">
+          <span>No 💔</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Joy Animation Container -->
+  <div class="animation-container hidden" id="joyAnimation">
+    <div class="celebration-content">
+      <div class="fireworks" id="fireworks"></div>
+      <h1 class="celebration-title">Yay! 🎉</h1>
+      <p class="celebration-text">You just made me the happiest person!</p>
+      <div class="love-message">
+        <p>I can't wait to spend Valentine's Day with you! 💕</p>
+      </div>
+      <div class="floating-hearts-celebration"></div>
+    </div>
+  </div>
+
+  <!-- Sad Animation Container -->
+  <div class="animation-container hidden" id="sadAnimation">
+    <div class="sad-content">
+      <div class="rain-container" id="rainContainer"></div>
+      <h1 class="sad-title">Oh no... 💔</h1>
+      <p class="sad-text">My heart is breaking...</p>
+      <div class="broken-heart">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path class="heart-left" d="M50,85 C50,85 10,60 10,35 C10,20 20,15 27,15 C35,15 45,20 50,30" fill="#ff6b9d" />
+          <path class="heart-right" d="M50,85 C50,85 90,60 90,35 C90,20 80,15 73,15 C65,15 55,20 50,30"
+            fill="#ff6b9d" />
+        </svg>
+      </div>
+      <button class="btn btn-retry" id="retryBtn">
+        <span>Changed your mind? 🥺</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
